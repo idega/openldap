@@ -1,2 +1,2 @@
 # openldap
-Open LDAP
+OpenLDAP default configuration for servers 

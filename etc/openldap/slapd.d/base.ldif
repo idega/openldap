@@ -1,0 +1,28 @@
+# Root
+dn: dc=ldap,dc=idega,dc=is
+description: LDAP BaseDN
+dc: ldap
+o: ldap.idega.is
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+
+# Administrator
+dn: cn=ldapadm,dc=ldap,dc=idega,dc=is
+objectClass: organizationalRole
+cn: ldapadm
+description: LDAP administrator
+
+# Subtree for Users
+dn: ou=Users,dc=ldap,dc=idega,dc=is
+ou: Users
+description: Parent Ldap Users
+objectClass: organizationalUnit
+objectClass: top
+
+# Subtree for Groups
+dn: ou=Groups,dc=ldap,dc=idega,dc=is
+ou: Groups
+description: Parent LDAP Groups
+objectClass: organizationalUnit
+objectClass: top
