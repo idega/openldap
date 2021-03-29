@@ -1,14 +1,14 @@
-dn: olcDatabase={2}hdb,cn=config
+dn: olcDatabase={2}mdb,cn=config
 changetype: modify
 replace: olcSuffix
 olcSuffix: dc=ldap,dc=idega,dc=is
 
-dn: olcDatabase={2}hdb,cn=config
+dn: olcDatabase={2}mdb,cn=config
 changetype: modify
 replace: olcRootDN
 olcRootDN: cn=ldapadm,dc=ldap,dc=idega,dc=is
 
-dn: olcDatabase={2}hdb,cn=config
+dn: olcDatabase={2}mdb,cn=config
 changetype: modify
 replace: olcRootPW
 olcRootPW: {SSHA} passwordGoesHere
